@@ -1,8 +1,10 @@
 @charset "utf-8";
 @import "normalize";
+@import "colors";
 
 body {
-  background: #ECC561;
+  background: $dark-background;
+  color: $main-text;
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -14,7 +16,7 @@ body {
 }
 
 h1 {
-  color: rgba(0,0,0,0.5);
+  color: $colored-accent;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.8em;
   font-weight: 400;
@@ -31,11 +33,11 @@ h1 {
     border: 1px solid white;
     border-radius: 3px;
     padding: 0.75em 0.7em;
-    color: white;
+    color: $colored-accent;
     text-decoration: none;
     transition: color 0.1s linear;
     &:hover {
-      background: rgba(0,0,0,0.2);
+      background: $slightly-dark;
       color: white;
       transition: all 0.15s linear;
     }
@@ -45,6 +47,12 @@ h1 {
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s;
+
+  .photo {
+    img {
+      width: 200px;
+    }
+  }
 }
 
 @-webkit-keyframes welcome {
