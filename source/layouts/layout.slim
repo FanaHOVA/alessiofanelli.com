@@ -7,10 +7,14 @@ html
 
     title = current_page.data.title || "The Middleman"
 
-    link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
+    link href='//fonts.googleapis.com/css?family=Roboto+Mono:300,400' rel='stylesheet' type='text/css'
 
     == stylesheet_link_tag :site
-    == javascript_include_tag  "all"
 
-  body class="#{page_classes}"
+  body class="container"
     == yield
+
+    == javascript_include_tag 'https://code.jquery.com/jquery-3.2.1.min.js'
+    == javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
+    == javascript_include_tag 'https://cdn.rawgit.com/mattboldt/typed.js/master/js/typed.js'
+    == javascript_include_tag  "all"
