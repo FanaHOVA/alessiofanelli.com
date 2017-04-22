@@ -4,10 +4,11 @@
 document.addEventListener('DOMContentLoaded', function(){
     setTimeout(function() {
       $(".sections-row").fadeIn(200);
+      $(".sections-2-row").fadeIn(200);
     }, 2800);
     Typed.new('.hello', {
-      strings: ["Hello."],
-      typeSpeed: 95
+      strings: ["Hello!"],
+      typeSpeed: 60
     });
 
     Typed.new('.interests', {

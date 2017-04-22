@@ -1,5 +1,14 @@
-.sections-row {
+.sections-row, .sections-2-row {
+  margin-top: 25px;
   display: none;
+
+  .col-md-4 {
+    font-size: 2em;
+  }
+
+  .fa {
+    font-size: 4em;
+  }
 }
 
 .interests {
